@@ -1,4 +1,4 @@
-import Race from "./Race";
+import Race from './Race';
 
 export default class Halfling extends Race {
   private _maxLifePoints: number;
@@ -17,5 +17,4 @@ export default class Halfling extends Race {
   public static createdRacesInstances(): number {
     return this._numberOfInstances;
   }
-
 }
