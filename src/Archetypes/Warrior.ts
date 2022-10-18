@@ -3,7 +3,7 @@ import Arquetype from './Archetype';
 
 export default class Warrior extends Arquetype {
   protected _energyType: EnergyType;
-  protected static _numberOfInstances: 0;
+  protected static _numberOfInstances = 0;
 
   constructor(name: string) {
     super(name);
