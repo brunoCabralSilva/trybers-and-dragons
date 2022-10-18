@@ -15,6 +15,14 @@ export default abstract class Arquetype {
     return this.name;
   }
 
+  public get special(): number {
+    return this._special;
+  }
+
+  public get cost(): number {
+    return this._cost;
+  }
+
   public abstract get energyType(): EnergyType;
 
   public static createdArchetypeInstances(): number {
