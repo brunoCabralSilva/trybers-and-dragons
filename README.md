@@ -6,7 +6,7 @@
 
   ---
 
-### <summary><strong>🐉 Contextualizando 🐲</strong></summary><br />
+### <summary><strong>🐉 Contextualizando 🐲</strong></summary>
 
   No universo de Trybers and Dragons - T&D, quase todos os seres que andam por essas terras pertencem a uma **raça** definida.
 
