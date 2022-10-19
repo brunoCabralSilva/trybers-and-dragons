@@ -6,7 +6,7 @@
 
   ---
 
-  <summary><strong>🐉 Contextualizando 🐲</strong></summary><br />
+### <summary><strong>🐉 Contextualizando 🐲</strong></summary><br />
 
   No universo de Trybers and Dragons - T&D, quase todos os seres que andam por essas terras pertencem a uma **raça** definida.
 
@@ -44,7 +44,6 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - Esse número corresponde à quantidade máxima de pontos de vida da raça;
   - Cada raça terá seu número máximo de pontos, **que será definido dentro de cada classe especializada**;
   - Na classe `Race` **deve estar apenas a assinatura do método**.
-
 <br>
 ---
 
@@ -64,7 +63,6 @@ Antes de prosseguir com a missão, é muito importante saber que:
   - A raça `Orc` deve receber `74` pontos de vida.
 - Não se esqueça de implementar o(s) método(s) necessário(s) após estender a classe abstrata `Race`;
 - Não se esqueça de fazer a sobrescrita (`override`) do(s) método(s) necessário(s).
-
 <br>
 ---
 
@@ -82,16 +80,6 @@ Sua próxima missão é tornar possível o uso destes dois tipos de energia:  *"
       - Esse novo tipo ~~pode~~ deve receber os valores: `'mana'` ou `'stamina'`;
       - O tipo `EnergyType` também deve ser exportado.
     - `amount`, do tipo `number`.
-
-✨ Dica de mestre: ✨
-- Para implementar a `interface Energy`, é necessário criar um tipo novo, o `type EnergyType`;
-
-<br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a interface `Energy` deve ser exportada de forma padrão ( com `export default`).
-> - `EnergyType` também deve ser exportado, mas este de forma explícita (`export`).
-
 <br>
 ---
 
