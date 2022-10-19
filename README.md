@@ -1,8 +1,8 @@
-# Projeto Trybers and Dragons!
+# Projeto Trybers and Dragons
 
-  <summary>
-    Para este projeto, você deverá aplicar os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos `RPG` (_Role Playing Game_).
-    </summary>
+  <p>
+    O Trybers and Dragons foi o 28º projeto desenvolvido pela Trybe onde foi possível  aplicar os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos `RPG` (_Role Playing Game_).
+</p>
 
   ---
 
