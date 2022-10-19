@@ -15,10 +15,8 @@
   Alguns seres também possuem uma **energia** e, ao treinarem o uso da energia, passam a possuir um **arquétipo**. De modo geral, os arquétipos definem a vocação de uma personagem, suas habilidades e visão de mundo: como encaram as situações, exploram masmorras ou enfrentam monstros. Como exemplos de arquétipos presentes em T&D, podemos citar guerreiro, mago e necromante.
 
   Boa parte dos seres podem ser considerados lutadores, bastando para isso possuir alguns atributos específicos. Em muitas ocasiões podem acontecer lutas entre personagens diversas, bem como entre personagens e monstros.
-
-  Agora, cabe a você, nobre ~~dev~~, explorar essas terras e cumprir as quests que surgirão ao longo da sua incrível ~~jornada~~ leitura do README.
-
-  
+ 
+### Requisitos desenvolvidos e concluídos para o projeto
 
 ### 1 - Crie a classe `Race`
 
@@ -48,12 +46,10 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - Na classe `Race` **deve estar apenas a assinatura do método**.
 
 <br>
-
+---
 
 ### 2 - Crie classes que herdam de `Race`
 
-<summary><strong>➕ Detalhes </strong></summary>
-  
 Já foi dito anteriormente que há uma diversidade de raças neste universo e agora chegou a hora de você saber mais a respeito de algumas delas. Nesta segunda *quest*, você irá criar classes para quatro raças que existem no mundo de T&D.
 
 Antes de prosseguir com a missão, é muito importante saber que:
@@ -70,47 +66,9 @@ Antes de prosseguir com a missão, é muito importante saber que:
 - Não se esqueça de fazer a sobrescrita (`override`) do(s) método(s) necessário(s).
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Assim como no requisito anterior, cada uma das classes criadas (`Dwarf`, `Elf`, `Halfling` e `Orc`) para este requisito deve ser exportada de forma padrão (com `export default`).
-> - As classes (`Dwarf`, `Elf`, `Halfling` e `Orc`) devem ser importadas dentro de `src/Races/index.ts` e exportadas de forma explícita (`export { class1, class2, classN }`).
-> - Não se esqueça de implementar o método `createdRacesInstances` nas classes herdeiras;
-
-<br>
-
-<summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para as classe que herdam de Race:
-  - A classe `Dwarf` existe;
-  - A classe `Dwarf` herda de `Race`;
-  - O atributo `name` da classe `Dwarf` pode ser lido;
-  - O atributo `dexterity` da classe `Dwarf` pode ser lido;
-  - O método `createdRacesInstances` retorna o número correto de instâncias criadas da classe `Dwarf`;
-  - O atributo `maxLifePoints` da classe `Dwarf` existe e é igual a 80;
-  - A classe `Elf` existe;
-  - A classe `Elf` herda de `Race`;
-  - O atributo `name` da classe `Elf` pode ser lido;
-  - O atributo `dexterity` da classe `Elf` pode ser lido;
-  - O método `createdRacesInstances` retorna o número correto de instâncias criadas da classe `Elf`;
-  - O atributo `maxLifePoints` da classe `Elf` existe e é igual a 99;
-  - A classe `Halfling` existe;
-  - A classe `Halfling` herda de `Race`;
-  - O atributo `name` da classe `Halfling` pode ser lido;
-  - O atributo `dexterity` da classe `Halfling` pode ser lido;
-  - O método `createdRacesInstances` retorna o número correto de instâncias criadas da classe `Halfling`;
-  - O atributo `maxLifePoints` da classe `Halfling` existe e é igual a 60;
-  - A classe `Orc` existe;
-  - A classe `Orc` herda de `Race`;
-  - O atributo `name` da classe `Orc` pode ser lido;
-  - O atributo `dexterity` da classe `Orc` pode ser lido;
-  - O método `createdRacesInstances` retorna o número correto de instâncias criadas da classe `Orc`;
-  - O atributo `maxLifePoints` da classe `Orc` existe e é igual a 74;
-
 ---
 
 ### 3 - Crie a interface `Energy`
-
-<summary><strong>➕ Detalhes </strong></summary>
   
 Energia é um atributo vital para a maioria dos seres. No contexto de `Trybers and Dragons`, a energia gasta ao se andar, nadar, escalar ou lutar é chamada de *"stamina"* .
 Contudo, esse universo também abriga seres capazes de usar magia. Nesses casos, a energia gasta é chamada de *"mana"*.
@@ -135,23 +93,9 @@ Sua próxima missão é tornar possível o uso destes dois tipos de energia:  *"
 > - `EnergyType` também deve ser exportado, mas este de forma explícita (`export`).
 
 <br>
-
-<summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a interface Energy:
-  - É possível criar uma variável com o tipo `EnergyType` e atribuir a ela o valor `'mana'`;
-  - É possível criar uma variável com o tipo `EnergyType` e atribuir a ela o valor `'stamina'`;
-  - É possível criar uma variável com o tipo da interface `Energy` e atribuir a ela o valor `{ amount: 10, type_: 'stamina'}`;
-  - É possível criar uma variável com o tipo da interface `Energy` e atribuir a ela o valor `{ amount: 45, type_: 'mana'}`;
-  - Não é possível criar uma variável com o tipo `EnergyType` e atribuir a ela um valor diferente de `'mana'` ou `'stamina'`;
-  - Não é possível criar uma variável com o tipo da interface `Energy` sem atribuir a ela um `amount`;
-  - Não é possível criar uma variável com o tipo da interface `Energy` sem atribuir a ela um `type_`.
-
 ---
 
 ### 4 - Crie a classe `Archetype`
-
-  <summary><strong>➕ Detalhes </strong></summary>
   
 Dentro do nosso universo, os seres têm talentos especiais e cada um desses talentos tem o seu nome dentro de T&D.
 Aqui vamos ter alguns atributos super legais e necessários, que representarão o nome, a potência do seu ataque especial e o custo energético para utilizá-lo. Por isso, sua próxima *quest* será **criar a classe abstrata `Archetype`**.
@@ -179,31 +123,9 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - A classe abstrata `Archetype` **deve conter apenas a assinatura do método**.
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Archetype` deve ser exportada de forma padrão ( com `export default`);
-> - Um arquivo `index.ts` deve ser criado dentro do diretório `src/Archetypes/`;
-> - A classe `Archetype` deve ser importada dentro deste arquivo e exportada também de forma padrão, como feito com `Race`.
-
-<br>
-
-<summary><strong>🔎 O que será verificado</strong></summary>
-  <br>
-
-  > :dragon_face: Para a classe Archetype:
-  - A classe `Archetype` existe;
-  - A classe `Archetype` é abstrata;
-  - O atributo `name` da classe `Archetype` pode ser lido;
-  - O atributo `name` da classe `Archetype` não pode ser alterado;
-  - O atributo `special` da classe `Archetype` pode ser lido;
-  - O atributo `cost` da classe `Archetype` pode ser lido;
-  - O tipo do retorno do método `energyType` é `EnergyType`;
-
 ---
 
 ### 5 - Crie classes que herdam de `Archetype`
-
-  <summary><strong>➕ Detalhes </strong></summary>
   
 Como você pode imaginar, há diversos arquétipos diferentes no mundo de *Trybers and Dragons*, cada um com as suas peculiaridades e alinhamentos.
 Agora, chegou a hora de você conhecer alguns desses arquétipos. E o que poderia ser melhor para isso do que criar classes para eles?
@@ -223,44 +145,10 @@ Para isto, atenção às instruções a seguir:
 - Não se esqueça de fazer a sobrescrita (`override`) do(s) método(s) necessário(s);
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Assim como no requisito anterior, cada uma das classes criadas (`Mage`, `Necromancer`, `Warrior` e `Ranger`) para este requisito deve ser exportada de forma padrão ( com `export default`);
-> - Novamente, as classes (`Mage`, `Necromancer`, `Warrior` e `Ranger`) devem ser importadas dentro de `src/Archetypes/index.ts` e exportadas de forma explícita (`export { class1, class2, classN }`).
-> - Não se esqueça de implementar o método `createdArchetypeInstances` nas classes herdeiras;
-
-<br>
-
-<summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para as classes que herdam de Archetype:
-  - A classe `Mage` existe;
-  - A classe `Mage` herda de `Archetype`;
-  - O atributo `name` da classe `Mage` pode ser lido;
-  - O método `energyType` da Classe `Mage` existe e retorna um `EnergyType`;
-  - O método `createdArchetypeInstances` deve retornar o número correto de instâncias criadas da classe `Mage`;
-  - A classe `Necromancer` existe;
-  - A classe `Necromancer` herda de `Archetype`;
-  - O atributo `name` da classe `Necromancer` pode ser lido;
-  - O atributo `energyType` da classe `Necromancer` pode ser lido;
-  - O método `createdArchetypeInstances` deve retornar o número correto de instâncias criadas da classe `Necromancer`;
-  - A classe `Ranger` existe;
-  - A classe `Ranger` herda de `Archetype`;
-  - O atributo `name` da classe `Ranger` pode ser lido;
-  - O atributo `energyType` da classe `Ranger` pode ser lido;
-  - O método `createdArchetypeInstances` deve retornar o número correto de instâncias criadas da classe `Ranger`;
-  - A classe `Warrior` existe;
-  - A classe `Warrior` herda de `Archetype`;
-  - O atributo `name` da classe `Warrior` pode ser lido;
-  - O atributo `energyType` da classe `Warrior` pode ser lido;
-  - O método `createdArchetypeInstances` deve retornar o número correto de instâncias criadas da classe `Warrior`;
-
 ---
 
 ### 6 - Crie a interface `Fighter`
 
-  <summary><strong>➕ Detalhes </strong></summary>
-  
 Um universo tão rico e cheio de diferentes seres, com diferentes alinhamentos, convicções e personalidades pode não ser um lugar sempre amigável. Por isso, seus habitantes têm que ser capazes de se defender ou de inventar artimanhas para se livrarem de brigas, confusões e armadilhas. Sendo assim, podemos dizer que todos os seres de T&D são, em essência, lutadores.
 
 Para fixar bem esse conceito, preparamos para você a missão especial de criar a interface `Fighter`. Mas não se preocupe! Não deixaremos você dar mais nem um passo sem as informações necessárias para tirar isso de letra! Observe as orientações abaixo:
@@ -284,33 +172,9 @@ Para fixar bem esse conceito, preparamos para você a missão especial de criar 
 - Agora você pode descomentar os trechos de código dos arquivos do diretório `Battle`; (`Battle.ts` e `index.ts`).
 
 <br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a interface `Fighter` deve ser exportada de forma padrão (com `export default`);
-> - Um arquivo chamado `index.ts` deve ser criado dentro do diretório `src/Fighter/`;
-> - A interface `Fighter` deve ser importada dentro deste arquivo e exportada também de forma padrão, como feito em requisitos anteriores.
-
-<br>
-
-<summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a interface Fighter:
-  - A interface `Fighter` existe;
-  - A interface `Fighter` pode ser implementada corretamente;
-  - A interface `Fighter` possui o atributo `lifePoints`;
-  - A interface `Fighter` possui o atributo `strength`;
-  - A interface `Fighter` possui o atributo `defense`;
-  - A interface `Fighter` possui o método `attack()`, que recebe um `enemy` do tipo `Fighter`;
-  - A interface `Fighter` possui o método `special()`, que recebe um `enemy` do tipo `Fighter`
-  - A interface `Fighter` possui o método `receiveDamage()`, que recebe um `attackPoints` do tipo number;
-  - O atributo `energy` deverá ser do tipo `Energy`, definido no arquivo `src/Energy.ts`;
-  - A interface `Fighter` possui o método `levelUp()`, que não recebe parâmetros nem retorna nada;
-
 ---
 
 ### 7 - Crie a classe `Character`
-
-  <summary><strong>➕ Detalhes </strong></summary>
 
 Maravilha! Agora já temos tanto as nossas raças quanto os nossos arquétipos e interfaces definidos. Mas antes de sair por aí entrando em tavernas e calabouços, temos outra *quest*: **criar uma personagem**!
 
@@ -367,32 +231,7 @@ As dicas para completar essa *quest* são:
     - Aqui você pode expandir sua mente e realizar a lógica que achar mais interessante para um ataque especial, use tudo que aprendeu no mundo de T&D! :dragon_face:
     - Esta parte do requisito não esta sendo avalida é apenas para você se divertir aprendendo. 💚
 
-✨ Dica de mestre: ✨
-- Para gerar valores aleatórios, use a função `getRandomInt` fornecida no arquivo `src/utils.ts`.
-
 <br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Character` deve ser exportada de forma padrão ( com `export default`).
-
-<br>
-
-  <summary>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a classe Character:
-  - A classe `Character` existe;
-  - A classe `Character` implementa a interface `Fighter`;
-  - `Character` possui uma `Race`;
-  - `Character` possui um `Archetype`;
-  - `Character` possui um atributo `lifePoints`, que pode ser lido, mas não pode ser setado;
-  - `Character` possui um atributo `strength`, que pode ser lido, mas não pode ser setado;
-  - `Character` possui um atributo `defense`, que pode ser lido, mas não pode ser setado;
-  - `Character` possui um atributo `energy`, que pode ser lido, mas não pode ser setado nem ter um de seus valores internos alterados;
-  - `Character` possui um atributo `dexterity`, que pode ser lido, mas não pode ser setado;
-  - `Character` pode subir de nível através do método `levelUp`, e seus atributos (`amount`, `maxLifePoints`, `strength`, `dexterity`, `defense`) terão um incremento;
-  - `Character` pode receber danos através do método `receiveDamage`;
-  - `Character1` pode atacar `Character2`;
-
 ---
 
 ### 8 - Crie a interface `SimpleFighter`
