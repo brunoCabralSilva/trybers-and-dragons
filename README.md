@@ -18,11 +18,9 @@
 
   Agora, cabe a você, nobre ~~dev~~, explorar essas terras e cumprir as quests que surgirão ao longo da sua incrível ~~jornada~~ leitura do README.
 
-  **_Now, follow ~~the blind~~ the dungeon master!_**
+  
 
 ### 1 - Crie a classe `Race`
-
-<summary><strong>➕ Detalhes </strong></summary>
 
 No universo de Trybers and Dragons - T&D, quase todos os seres racionais têm uma raça e, embora todas as raças de personagens sejam humanoides, cada uma tem as suas particularidades.
 
@@ -49,31 +47,8 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - Cada raça terá seu número máximo de pontos, **que será definido dentro de cada classe especializada**;
   - Na classe `Race` **deve estar apenas a assinatura do método**.
 
-> Dica: use a convenção de atributos privados para criar os atributos **com** `_` e os getters para expor os atributos **sem** o `_`.
 <br>
 
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Race` deve ser exportada de forma padrão (com `export default`);
-> - Deve ser criado o arquivo chamado `index.ts` dentro do diretório `src/Races/`;
-> - A classe `Race` deve ser importada dentro deste arquivo e exportada também de forma padrão, da mesma forma que no diretório `src/Battle/`.
-
-<br>
-
-<summary><strong> 🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a classe Race:
-  - A classe `Race` existe;
-  - A classe `Race` é abstrata;
-  - O método `maxLifePoints` da classe `Race` é abstrato;
-  - O método `maxLifePoints` ao ser implementado retorna um valor numérico;
-  - O atributo `name` da classe `Race` pode ser lido;
-  - O atributo `name` da classe `Race` *NÃO* pode ser alterado;
-  - O atributo `dexterity` da classe `Race` pode ser lido;
-  - O atributo `dexterity` da classe Race *NÃO* pode ser redefinido;
-  - O método `createdRacesInstances` deve existir e ser estático;
-  - O método `createdRacesInstances` deve lançar um erro com a mensagem "Not implemented".
-
----
 
 ### 2 - Crie classes que herdam de `Race`
 
