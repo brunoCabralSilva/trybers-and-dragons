@@ -48,7 +48,7 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - Cada raça terá seu número máximo de pontos, **que será definido dentro de cada classe especializada**;
   - Na classe `Race` **deve estar apenas a assinatura do método**.
 
-  ---
+---
 
 ### 2 - Crie classes que herdam de `Race`
 
@@ -67,7 +67,7 @@ Antes de prosseguir com a missão, é muito importante saber que:
 - Não se esqueça de implementar o(s) método(s) necessário(s) após estender a classe abstrata `Race`;
 - Não se esqueça de fazer a sobrescrita (`override`) do(s) método(s) necessário(s).
 
-  ---
+---
 
 ### 3 - Crie a interface `Energy`
   
@@ -84,9 +84,7 @@ Sua próxima missão é tornar possível o uso destes dois tipos de energia:  *"
       - O tipo `EnergyType` também deve ser exportado.
     - `amount`, do tipo `number`.
 
-  ---
-
-
+---
 
 ### 4 - Crie a classe `Archetype`
   
@@ -115,7 +113,7 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - Cada arquétipo terá o seu tipo de energia, **que será definido dentro de suas classes especializadas**;
   - A classe abstrata `Archetype` **deve conter apenas a assinatura do método**.
 
-<br>
+
 ---
 
 ### 5 - Crie classes que herdam de `Archetype`
@@ -137,7 +135,7 @@ Para isto, atenção às instruções a seguir:
 - Não se esqueça de implementar o(s) método(s) necessário(s) após estender a classe abstrata `Archetype`;
 - Não se esqueça de fazer a sobrescrita (`override`) do(s) método(s) necessário(s);
 
-<br>
+
 ---
 
 ### 6 - Crie a interface `Fighter`
@@ -164,7 +162,7 @@ Para fixar bem esse conceito, preparamos para você a missão especial de criar 
   - Pesquise sobre: `Optional Properties` ou `Optional parameters` em interfaces;
 - Agora você pode descomentar os trechos de código dos arquivos do diretório `Battle`; (`Battle.ts` e `index.ts`).
 
-<br>
+
 ---
 
 ### 7 - Crie a classe `Character`
@@ -224,12 +222,10 @@ As dicas para completar essa *quest* são:
     - Aqui você pode expandir sua mente e realizar a lógica que achar mais interessante para um ataque especial, use tudo que aprendeu no mundo de T&D! :dragon_face:
     - Esta parte do requisito não esta sendo avalida é apenas para você se divertir aprendendo. 💚
 
-<br>
+
 ---
 
 ### 8 - Crie a interface `SimpleFighter`
-
-  <summary><strong>➕ Detalhes </strong></summary>
 
 Uau, o nosso universo de T&D está ficando fabuloso! No entanto, nem todo mundo que luta possui capacidades avançadas, como ter uma defesa ou realizar ataques especiais. Dito isto, vamos para mais uma *quest*: **criar a interface lutador simples**
 
@@ -245,28 +241,9 @@ As dicas para completar essa *quest* são:
   - `receiveDamage()` que recebe um `attackPoints` do tipo `number` como parâmetro e retorne um `number`;
 - Aqui é um bom momento para treinarmos algumas skills deste bloco e aplicar uma refatoração, além disso você acaba adiantando uma parte do próximo requisito ✨. Utilize a segregação de interfaces, volte e observe nossa `interface Fighter`.
 
-<br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a interface `SimpleFighter` deve ser exportada de forma padrão (com `export default`);
-> - A interface `SimpleFighter` deve ser importada dentro de `src/Fighter/index.ts` e deve ser exportada de forma explícita (`export { SimpleFighter }`), como feito em requisitos anteriores.
-
-<br>
-
-  <summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a interface SimpleFighter:
-  - A interface `SimpleFighter` existe;
-  - A interface `SimpleFighter` possui o atributo `lifePoints`;
-  - A interface `SimpleFighter` possui o atributo `strength`;
-  - A interface `SimpleFighter` possui o método `attack`, que recebe um `enemy` do tipo `SimpleFighter`;
-  - A interface `SimpleFighter` possui o método `receiveDamage`, que recebe um `attackPoints` do tipo `number`;
-
 ---
 
 ### 9 - Crie a classe `Monster`
-
-  <summary><strong>➕ Detalhes </strong></summary>
 
 Se existem seres que implementam a `interface Fighter`, deve existir seres que implementam a `interface SimpleFighter` também, não é ? Estes são os `Monsters`, criaturas bestiais que apenas atacam outros seres. Então, sua próxima *quest* é: **criar a classe Monster**!
 
@@ -291,32 +268,9 @@ O que você deve saber para seguir em frente:
     - Toda vez que acontecer um ataque, o inimigo recebido por parâmetro recebe um dano;
     - Este dano deve ser calculado a partir de `attackPoints` equivalentes à força (`strength`) de quem ataca.
 
-<br>
-
-✨ Dica de mestre: ✨
-- Aqui vamos precisar que os métodos de `Fighter` que recebiam um inimigo do tipo `Fighter` agora possam receber um `SimpleFighter`. Assim um `Fighter` pode atacar um `Monster` 😄.
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Monster` deve ser exportada de forma padrão ( com `export default`).
-
-<br>
-
-  <summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a classe Monster:
-  - A classe `Monster` existe;
-  - A classe `Monster` implementa a interface `SimpleFighter`;
-  - `Monster` possui um atributo `lifePoints`, que pode ser lido, mas não pode ser setado;
-  - `Monster` possui um atributo `strength`, que pode ser lido, mas não pode ser setado;
-  - `Monster` pode receber danos através do método `receiveDamage`, fazendo com que seus `lifePoints` diminuam;
-  - `Monster` pode atacar um `Character`, e o `Character` receberá dano;
-  - `Character` pode atacar um `Monster`, e o `Monster` receberá de dano;
-
 ---
 
 ### 10 - Crie a classe `PVP`
-
-  <summary><strong>➕ Detalhes </strong></summary>
 
 A ideia do mundo de T&D ser completamente pacífico provavelmente já deve ter desaparecido da sua mente depois das suas últimas *quests*. 
 Nesse mundo, existem lutas, muitas delas inclusive épicas, denominadas `Battles` (batalhas). Sua representação geral/abstrata já foi fornecida anteriormente, entretanto, existem tipos específicos de batalhas. Uma dessas batalhas chamamos de `PVP`, batalhas entre personagens (ou *player versus player*), que só podem acontecer entre personagens lutadores (`Fighters`). 🧙‍♀️ ⚔️ 🧙‍♂️
@@ -339,28 +293,9 @@ Brincadeira! Estamos aqui para te ajudar e por isso trazemos abaixo algumas dica
 - Se necessário, refatore o que já foi feito com as interfaces `Fighter` e `SimpleFighter` para se adequarem melhor à sua nova implementação de batalha;
 - Não esqueça de descomentar os trechos de código dos arquivos do diretório `Battle` como citado nas "Dica de mestre" do requisito 6 - Crie a interface `Fighter`.
 
-<br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `PVP` deve ser exportada de forma padrão (com `export default`);
-> - Novamente, dentro de `src/Battle/index.ts`, a classe (`PVP`) deve ser importada, porém esta deve ser exportada de forma normal (`export { PVP }`), como feito em requisitos anteriores.
-
-<br>
-
-  <summary>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a classe PVP:
-  - A classe `PVP` existe e pode ser criada uma nova instância, passando dois `Characters` lutadores;
-  - A classe `PVP` pode ser utilizada onde a classe `Battle` é esperada e uma personagem que chamou várias vezes o levelUp e possui melhores atributos tem maiores chances de vencer;
-  - A classe `PVP` pode receber tanto dois `Characters` quanto duas instâncias de uma implementação diferente de `Fighter`;
-
 ---
 
-## Requisitos Bônus
-
 ### 11 - Criar a classe `PVE`
-
-  <summary><strong>➕ Detalhes </strong></summary>
 
 Nem todas as batalhas são entre personagens lutadoras (`Character`), afinal, há perigos à solta que espreitam ao escurecer, em densas florestas ou em calabouços profundos.
 
@@ -376,26 +311,9 @@ Antes de prosseguir para essa nova batalha, leia atentamente as dicas abaixo !!!
   - Como na "Dica de mestre" do requisito anterior (`PVP`), não esqueça de implementar uma lógica de luta para este requisito também;
   - Lembre-se, aqui a luta é de uma personagem contra apenas um oponete ou uma legião deles. Logo, para a batalha ser finalizada, a personagem principal, ou seus oponentes, deverão ter perdido os seus respectivos pontos de vida (`lifePoints`).
 
-<br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `PVE` deve ser exportada de forma padrão (com `export default`);
-> - Novamente dentro de `src/Battle/index.ts` a classe (`PVE`) deve ser importada, porém desta vez de forma normal (`export { PVP }`), como feito em requisitos anteriores.
-
-<br>
-
-  <summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a classe PVE:
-  - A classe `PVE` existe e se pode ser criada uma nova instância, passando um `Character` e um array com um `Monster`;
-  - A classe `PVE` pode ser utilizada onde a classe `Battle` é esperada. Além disso, uma personagem (`Character`) que chamou várias vezes o método `levelUp` e possui melhores atributos tem maiores chances de vencer uma luta contra somente um `Monster`, enquanto uma personagem com atributos menores perde uma luta contra diversos `Monsters`;
-  - A classe `PVE` pode receber tanto `Character` e um array com um `Monster` quanto implementações diferentes de `Fighter` e `SimpleFighter` que não são `Character` nem `Monster`;
-
 ---
 
 ### 12 - Crie a classe `Dragon`
-
-  <summary><strong>➕ Detalhes </strong></summary>
 
 Seria muito estranho se esse mundo se chamasse Trybers and Dragons e não existissem `Dragons`, não é mesmo?
 Estes seres magníficos são representados como monstros aqui, mas com a característica especial de possuírem elevados valores de pontos de vida.
@@ -409,25 +327,9 @@ Nesta *quest*, você deve **criar a classe `Dragon`**, cuidando para garantir qu
 :dragon_face: Dica de mestre: :dragon_face:
 - Aqui é interessante voltar no conteúdo do course sobre **Herança e Interfaces** e relembrar um pouco de **Atributos protegidos**;
 
-<br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, a classe `Dragon` deve ser exportada de forma padrão ( com `export default`).
-
-<br>
-
-  <summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a classe Dragon:
-  - A classe `Dragon` existe;
-  - A classe `Dragon` herda de `Monster`;
-  - `Dragon` deve ter 999 no valor do atributo `lifePoints`;
-
 ---
 
 ### 13 - Crie objetos no arquivo `index`
-
-  <summary><strong>➕ Detalhes </strong></summary>
 
 Você já modelou todo o mundo de T&D, maravilha!
 
@@ -462,21 +364,5 @@ Algumas dicas se fazem necessárias para completar sua última missão no mundo 
 
 ✨ Última dica de mestre: ✨
 - Lembre-se `Battle` não pode ser instanciada, pois é uma classe abstrata;
-
-<br>
-
-> ⚠️ **Atenção**:
-> - Para que os testes funcionem corretamente, os objetos/métodos criados em `src/index.ts` devem ser exportados como explicado no requisito;
-
-<br>
-
-  <summary><strong>🔎 O que será verificado</strong></summary>
-
-  > :dragon_face: Para a criação de objetos no arquivo index:
-  - Existem 3 objetos do tipo `Character` no arquivo `index`, exportados como `player1`, `player2` e `player3` e o método `levelUp` foi chamado algumas vezes em `player1`
-  - Existem 2 objetos do tipo `Monster` no arquivo `index`, exportados como `monster1`, `monster2`, sendo que o objeto `monster2` é um `Dragon`;
-  - Existe um objeto do tipo `PVP` (com os `Characters` `player2` e `player3`), exportados no arquivo index como `pvp` e nele *NÃO* foi executado o método `pvp.fight`;
-  - Existe um objeto do tipo `PVE` (com o `Character` `player1` e com os `Monsters` `monster1` e `monster2`), exportado no arquivo `index` como `pve` e nele *NÃO* foi executado o método `pve.fight`;
-  - Existe uma função chamada `runBattles`, que recebe um `array de Battles` e chama em seu interior o método `battle.fight`;
 
 ---
