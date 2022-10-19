@@ -3,19 +3,20 @@ import Character from './Character';
 import Dragon from './Dragon';
 import Monster from './Monster';
 
-const player1 = new Character('Legolas');
-const player2 = new Character('Aragorn');
-const player3 = new Character('Faramir');
-
-const monster1 = new Monster();
-const monster2 = new Dragon();
-
-const pvp = new PVP(player2, player3);
-const pve = new PVE(player1, [monster1, monster2]);
+const player1: Character = new Character('Gandalf');
+const player2: Character = new Character('Legolas');
+const player3: Character = new Character('Aragorn');
 
 player1.levelUp();
 player1.levelUp();
 player1.levelUp();
+player1.levelUp();
+
+const monster1: Monster = new Monster();
+const monster2: Monster = new Dragon();
+
+const pvp: PVP = new PVP(player2, player3);
+const pve: PVE = new PVE(player1, [monster1, monster2]);
 
 const runBattles = (battles: Battle[]): void => {
   battles.forEach((battle) => battle.fight());

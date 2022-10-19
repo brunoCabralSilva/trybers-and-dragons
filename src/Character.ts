@@ -22,8 +22,8 @@ export default class Character implements SimpleFighter {
     this._dexterity = getRandomInt(1, 10);
     this._race = new Elf(name, this._dexterity);
     this._archetype = new Mage(name);
-    this._lifePoints = (this._race.maxLifePoints);
     this._maxLifePoints = (this._race.maxLifePoints) / 2;
+    this._lifePoints = (this._maxLifePoints);
     this._energy = {
       type_: this._archetype.energyType,
       amount: getRandomInt(1, 10),
@@ -77,17 +77,15 @@ export default class Character implements SimpleFighter {
   }
 
   levelUp() {
-    const increment = getRandomInt(1, 10);
+    this._strength += getRandomInt(1, 10);
+    this._defense += getRandomInt(1, 10);
+    this._dexterity += getRandomInt(1, 10);
+    this._maxLifePoints += getRandomInt(1, 10);
 
-    if (this._lifePoints + increment < this._race.maxLifePoints) {
-      this._maxLifePoints += increment;
-    } else {
+    if (this._maxLifePoints > this._race.maxLifePoints) {
       this._maxLifePoints = this._race.maxLifePoints;
     }
 
-    this._strength += increment;
-    this._defense += increment;
-    this._dexterity += increment;
     this._energy.amount = 10;
     this._lifePoints = this._maxLifePoints;
   }
