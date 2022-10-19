@@ -17,11 +17,9 @@ player1.levelUp();
 player1.levelUp();
 player1.levelUp();
 
-const runBattles = (battles: Battle[]) => {
-  for (let i = 0; i < battles.length; i += 1) {
-    battles[i].fight();
-  }
-}
+const runBattles = (battles: Battle[]): void => {
+  battles.forEach((battle) => battle.fight());
+};
 
 export { 
   player1,
@@ -33,4 +31,3 @@ export {
   pve,
   runBattles,
 };
-
