@@ -47,8 +47,8 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - Esse número corresponde à quantidade máxima de pontos de vida da raça;
   - Cada raça terá seu número máximo de pontos, **que será definido dentro de cada classe especializada**;
   - Na classe `Race` **deve estar apenas a assinatura do método**.
-<br>
----
+
+  ---
 
 ### 2 - Crie classes que herdam de `Race`
 
@@ -66,8 +66,8 @@ Antes de prosseguir com a missão, é muito importante saber que:
   - A raça `Orc` deve receber `74` pontos de vida.
 - Não se esqueça de implementar o(s) método(s) necessário(s) após estender a classe abstrata `Race`;
 - Não se esqueça de fazer a sobrescrita (`override`) do(s) método(s) necessário(s).
-<br>
----
+
+  ---
 
 ### 3 - Crie a interface `Energy`
   
@@ -83,8 +83,10 @@ Sua próxima missão é tornar possível o uso destes dois tipos de energia:  *"
       - Esse novo tipo ~~pode~~ deve receber os valores: `'mana'` ou `'stamina'`;
       - O tipo `EnergyType` também deve ser exportado.
     - `amount`, do tipo `number`.
-<br>
----
+
+  ---
+
+
 
 ### 4 - Crie a classe `Archetype`
   
