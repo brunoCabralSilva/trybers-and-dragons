@@ -1,13 +1,10 @@
 # Projeto Trybers and Dragons!
 
 
-  <strong>👨‍💻 O que deverá ser desenvolvido</strong><br />
-
-  Para este projeto, você deverá aplicar os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos `RPG` (_Role Playing Game_).
+    Para este projeto, você deverá aplicar os princípios da arquitetura `SOLID` e os princípios de `POO` em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos `RPG` (_Role Playing Game_).
 
   ---
 
-<details>
   <summary><strong>🐉 Contextualizando 🐲</strong></summary><br />
 
   No universo de Trybers and Dragons - T&D, quase todos os seres que andam por essas terras pertencem a uma **raça** definida.
@@ -22,12 +19,9 @@
 
   **_Now, follow ~~the blind~~ the dungeon master!_**
 
-</details>
-
 ### 1 - Crie a classe `Race`
 
-<details>
-  <summary><strong>➕ Detalhes </strong></summary>
+<summary><strong>➕ Detalhes </strong></summary>
 
 No universo de Trybers and Dragons - T&D, quase todos os seres racionais têm uma raça e, embora todas as raças de personagens sejam humanoides, cada uma tem as suas particularidades.
 
@@ -63,10 +57,8 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
 > - A classe `Race` deve ser importada dentro deste arquivo e exportada também de forma padrão, da mesma forma que no diretório `src/Battle/`.
 
 <br>
-</details>
 
-<details close>
-  <summary><strong> 🔎 O que será verificado</strong></summary>
+<summary><strong> 🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a classe Race:
   - A classe `Race` existe;
@@ -80,14 +72,11 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - O método `createdRacesInstances` deve existir e ser estático;
   - O método `createdRacesInstances` deve lançar um erro com a mensagem "Not implemented".
 
-</details>
-
 ---
 
 ### 2 - Crie classes que herdam de `Race`
 
-<details>
-  <summary><strong>➕ Detalhes </strong></summary>
+<summary><strong>➕ Detalhes </strong></summary>
   
 Já foi dito anteriormente que há uma diversidade de raças neste universo e agora chegou a hora de você saber mais a respeito de algumas delas. Nesta segunda *quest*, você irá criar classes para quatro raças que existem no mundo de T&D.
 
@@ -112,10 +101,8 @@ Antes de prosseguir com a missão, é muito importante saber que:
 > - Não se esqueça de implementar o método `createdRacesInstances` nas classes herdeiras;
 
 <br>
-</details>
 
-<details close>
-  <summary><strong>🔎 O que será verificado</strong></summary>
+<summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para as classe que herdam de Race:
   - A classe `Dwarf` existe;
@@ -143,14 +130,11 @@ Antes de prosseguir com a missão, é muito importante saber que:
   - O método `createdRacesInstances` retorna o número correto de instâncias criadas da classe `Orc`;
   - O atributo `maxLifePoints` da classe `Orc` existe e é igual a 74;
 
-</details>
-
 ---
 
 ### 3 - Crie a interface `Energy`
 
-<details>
-  <summary><strong>➕ Detalhes </strong></summary>
+<summary><strong>➕ Detalhes </strong></summary>
   
 Energia é um atributo vital para a maioria dos seres. No contexto de `Trybers and Dragons`, a energia gasta ao se andar, nadar, escalar ou lutar é chamada de *"stamina"* .
 Contudo, esse universo também abriga seres capazes de usar magia. Nesses casos, a energia gasta é chamada de *"mana"*.
@@ -175,10 +159,8 @@ Sua próxima missão é tornar possível o uso destes dois tipos de energia:  *"
 > - `EnergyType` também deve ser exportado, mas este de forma explícita (`export`).
 
 <br>
-</details>
 
-<details close>
-  <summary><strong>🔎 O que será verificado</strong></summary>
+<summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a interface Energy:
   - É possível criar uma variável com o tipo `EnergyType` e atribuir a ela o valor `'mana'`;
@@ -188,13 +170,11 @@ Sua próxima missão é tornar possível o uso destes dois tipos de energia:  *"
   - Não é possível criar uma variável com o tipo `EnergyType` e atribuir a ela um valor diferente de `'mana'` ou `'stamina'`;
   - Não é possível criar uma variável com o tipo da interface `Energy` sem atribuir a ela um `amount`;
   - Não é possível criar uma variável com o tipo da interface `Energy` sem atribuir a ela um `type_`.
-</details>
 
 ---
 
 ### 4 - Crie a classe `Archetype`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
   
 Dentro do nosso universo, os seres têm talentos especiais e cada um desses talentos tem o seu nome dentro de T&D.
@@ -230,10 +210,8 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
 > - A classe `Archetype` deve ser importada dentro deste arquivo e exportada também de forma padrão, como feito com `Race`.
 
 <br>
-</details>
 
-<details close>
-  <summary><strong>🔎 O que será verificado</strong></summary>
+<summary><strong>🔎 O que será verificado</strong></summary>
   <br>
 
   > :dragon_face: Para a classe Archetype:
@@ -244,13 +222,11 @@ Para que você tenha sucesso nesta *quest*, é importante saber que:
   - O atributo `special` da classe `Archetype` pode ser lido;
   - O atributo `cost` da classe `Archetype` pode ser lido;
   - O tipo do retorno do método `energyType` é `EnergyType`;
-</details>
 
 ---
 
 ### 5 - Crie classes que herdam de `Archetype`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
   
 Como você pode imaginar, há diversos arquétipos diferentes no mundo de *Trybers and Dragons*, cada um com as suas peculiaridades e alinhamentos.
@@ -278,10 +254,8 @@ Para isto, atenção às instruções a seguir:
 > - Não se esqueça de implementar o método `createdArchetypeInstances` nas classes herdeiras;
 
 <br>
-</details>
 
-<details close>
-  <summary><strong>🔎 O que será verificado</strong></summary>
+<summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para as classes que herdam de Archetype:
   - A classe `Mage` existe;
@@ -304,13 +278,11 @@ Para isto, atenção às instruções a seguir:
   - O atributo `name` da classe `Warrior` pode ser lido;
   - O atributo `energyType` da classe `Warrior` pode ser lido;
   - O método `createdArchetypeInstances` deve retornar o número correto de instâncias criadas da classe `Warrior`;
-</details>
 
 ---
 
 ### 6 - Crie a interface `Fighter`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
   
 Um universo tão rico e cheio de diferentes seres, com diferentes alinhamentos, convicções e personalidades pode não ser um lugar sempre amigável. Por isso, seus habitantes têm que ser capazes de se defender ou de inventar artimanhas para se livrarem de brigas, confusões e armadilhas. Sendo assim, podemos dizer que todos os seres de T&D são, em essência, lutadores.
@@ -343,10 +315,8 @@ Para fixar bem esse conceito, preparamos para você a missão especial de criar 
 > - A interface `Fighter` deve ser importada dentro deste arquivo e exportada também de forma padrão, como feito em requisitos anteriores.
 
 <br>
-</details>
 
-<details close>
-  <summary><strong>🔎 O que será verificado</strong></summary>
+<summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a interface Fighter:
   - A interface `Fighter` existe;
@@ -359,13 +329,11 @@ Para fixar bem esse conceito, preparamos para você a missão especial de criar 
   - A interface `Fighter` possui o método `receiveDamage()`, que recebe um `attackPoints` do tipo number;
   - O atributo `energy` deverá ser do tipo `Energy`, definido no arquivo `src/Energy.ts`;
   - A interface `Fighter` possui o método `levelUp()`, que não recebe parâmetros nem retorna nada;
-</details>
 
 ---
 
 ### 7 - Crie a classe `Character`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
 
 Maravilha! Agora já temos tanto as nossas raças quanto os nossos arquétipos e interfaces definidos. Mas antes de sair por aí entrando em tavernas e calabouços, temos outra *quest*: **criar uma personagem**!
@@ -432,9 +400,7 @@ As dicas para completar essa *quest* são:
 > - Para que os testes funcionem corretamente, a classe `Character` deve ser exportada de forma padrão ( com `export default`).
 
 <br>
-</details>
 
-<details close>
   <summary>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a classe Character:
@@ -450,13 +416,11 @@ As dicas para completar essa *quest* são:
   - `Character` pode subir de nível através do método `levelUp`, e seus atributos (`amount`, `maxLifePoints`, `strength`, `dexterity`, `defense`) terão um incremento;
   - `Character` pode receber danos através do método `receiveDamage`;
   - `Character1` pode atacar `Character2`;
-</details>
 
 ---
 
 ### 8 - Crie a interface `SimpleFighter`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
 
 Uau, o nosso universo de T&D está ficando fabuloso! No entanto, nem todo mundo que luta possui capacidades avançadas, como ter uma defesa ou realizar ataques especiais. Dito isto, vamos para mais uma *quest*: **criar a interface lutador simples**
@@ -480,9 +444,7 @@ As dicas para completar essa *quest* são:
 > - A interface `SimpleFighter` deve ser importada dentro de `src/Fighter/index.ts` e deve ser exportada de forma explícita (`export { SimpleFighter }`), como feito em requisitos anteriores.
 
 <br>
-</details>
 
-<details close>
   <summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a interface SimpleFighter:
@@ -491,13 +453,11 @@ As dicas para completar essa *quest* são:
   - A interface `SimpleFighter` possui o atributo `strength`;
   - A interface `SimpleFighter` possui o método `attack`, que recebe um `enemy` do tipo `SimpleFighter`;
   - A interface `SimpleFighter` possui o método `receiveDamage`, que recebe um `attackPoints` do tipo `number`;
-</details>
 
 ---
 
 ### 9 - Crie a classe `Monster`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
 
 Se existem seres que implementam a `interface Fighter`, deve existir seres que implementam a `interface SimpleFighter` também, não é ? Estes são os `Monsters`, criaturas bestiais que apenas atacam outros seres. Então, sua próxima *quest* é: **criar a classe Monster**!
@@ -532,9 +492,7 @@ O que você deve saber para seguir em frente:
 > - Para que os testes funcionem corretamente, a classe `Monster` deve ser exportada de forma padrão ( com `export default`).
 
 <br>
-</details>
 
-<details close>
   <summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a classe Monster:
@@ -545,13 +503,11 @@ O que você deve saber para seguir em frente:
   - `Monster` pode receber danos através do método `receiveDamage`, fazendo com que seus `lifePoints` diminuam;
   - `Monster` pode atacar um `Character`, e o `Character` receberá dano;
   - `Character` pode atacar um `Monster`, e o `Monster` receberá de dano;
-</details>
 
 ---
 
 ### 10 - Crie a classe `PVP`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
 
 A ideia do mundo de T&D ser completamente pacífico provavelmente já deve ter desaparecido da sua mente depois das suas últimas *quests*. 
@@ -582,16 +538,13 @@ Brincadeira! Estamos aqui para te ajudar e por isso trazemos abaixo algumas dica
 > - Novamente, dentro de `src/Battle/index.ts`, a classe (`PVP`) deve ser importada, porém esta deve ser exportada de forma normal (`export { PVP }`), como feito em requisitos anteriores.
 
 <br>
-</details>
 
-<details close>
   <summary>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a classe PVP:
   - A classe `PVP` existe e pode ser criada uma nova instância, passando dois `Characters` lutadores;
   - A classe `PVP` pode ser utilizada onde a classe `Battle` é esperada e uma personagem que chamou várias vezes o levelUp e possui melhores atributos tem maiores chances de vencer;
   - A classe `PVP` pode receber tanto dois `Characters` quanto duas instâncias de uma implementação diferente de `Fighter`;
-</details>
 
 ---
 
@@ -599,7 +552,6 @@ Brincadeira! Estamos aqui para te ajudar e por isso trazemos abaixo algumas dica
 
 ### 11 - Criar a classe `PVE`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
 
 Nem todas as batalhas são entre personagens lutadoras (`Character`), afinal, há perigos à solta que espreitam ao escurecer, em densas florestas ou em calabouços profundos.
@@ -623,22 +575,18 @@ Antes de prosseguir para essa nova batalha, leia atentamente as dicas abaixo !!!
 > - Novamente dentro de `src/Battle/index.ts` a classe (`PVE`) deve ser importada, porém desta vez de forma normal (`export { PVP }`), como feito em requisitos anteriores.
 
 <br>
-</details>
 
-<details close>
   <summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a classe PVE:
   - A classe `PVE` existe e se pode ser criada uma nova instância, passando um `Character` e um array com um `Monster`;
   - A classe `PVE` pode ser utilizada onde a classe `Battle` é esperada. Além disso, uma personagem (`Character`) que chamou várias vezes o método `levelUp` e possui melhores atributos tem maiores chances de vencer uma luta contra somente um `Monster`, enquanto uma personagem com atributos menores perde uma luta contra diversos `Monsters`;
   - A classe `PVE` pode receber tanto `Character` e um array com um `Monster` quanto implementações diferentes de `Fighter` e `SimpleFighter` que não são `Character` nem `Monster`;
-</details>
 
 ---
 
 ### 12 - Crie a classe `Dragon`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
 
 Seria muito estranho se esse mundo se chamasse Trybers and Dragons e não existissem `Dragons`, não é mesmo?
@@ -659,22 +607,18 @@ Nesta *quest*, você deve **criar a classe `Dragon`**, cuidando para garantir qu
 > - Para que os testes funcionem corretamente, a classe `Dragon` deve ser exportada de forma padrão ( com `export default`).
 
 <br>
-</details>
 
-<details close>
   <summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a classe Dragon:
   - A classe `Dragon` existe;
   - A classe `Dragon` herda de `Monster`;
   - `Dragon` deve ter 999 no valor do atributo `lifePoints`;
-</details>
 
 ---
 
 ### 13 - Crie objetos no arquivo `index`
 
-<details>
   <summary><strong>➕ Detalhes </strong></summary>
 
 Você já modelou todo o mundo de T&D, maravilha!
@@ -717,9 +661,7 @@ Algumas dicas se fazem necessárias para completar sua última missão no mundo 
 > - Para que os testes funcionem corretamente, os objetos/métodos criados em `src/index.ts` devem ser exportados como explicado no requisito;
 
 <br>
-</details>
 
-<details close>
   <summary><strong>🔎 O que será verificado</strong></summary>
 
   > :dragon_face: Para a criação de objetos no arquivo index:
@@ -728,6 +670,5 @@ Algumas dicas se fazem necessárias para completar sua última missão no mundo 
   - Existe um objeto do tipo `PVP` (com os `Characters` `player2` e `player3`), exportados no arquivo index como `pvp` e nele *NÃO* foi executado o método `pvp.fight`;
   - Existe um objeto do tipo `PVE` (com o `Character` `player1` e com os `Monsters` `monster1` e `monster2`), exportado no arquivo `index` como `pve` e nele *NÃO* foi executado o método `pve.fight`;
   - Existe uma função chamada `runBattles`, que recebe um `array de Battles` e chama em seu interior o método `battle.fight`;
-</details>
 
 ---
