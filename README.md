@@ -1,7 +1,7 @@
 # Projeto Trybers and Dragons
 
   <p>
-    O Trybers and Dragons foi o 28º projeto desenvolvido pela Trybe onde foi possível  aplicar os princípios da arquitetura SOLID e os princípios de POO (Programação Orientada a Objetos) em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).
+    O Trybers and Dragons foi o 29º projeto desenvolvido pela Trybe onde foi possível  aplicar os princípios da arquitetura SOLID e os princípios de POO (Programação Orientada a Objetos) em uma estrutura de jogos de interpretação de papéis, mais conhecidos como jogos RPG (Role Playing Game).
 </p>
 
   ---
